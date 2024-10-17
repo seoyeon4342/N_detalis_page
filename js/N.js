@@ -70,4 +70,47 @@ const WidthControlHandler = ()=>{
 
 window.addEventListener('scroll', WidthControlHandler)
 
+
+/* details_ performance scroll*/
+
+const ContentImg = document.querySelector('.details2_content > img')
+const Text_2 = document.querySelector('.details2_textwrap h2')
+const ContentItem = document.querySelector('.details2_content_item')
+
+const details2Event = (item)=>{
+
+  let difference = windowHeight - item.getBoundingClientRect().top
+  
+  if(difference > 150 && difference < item.offsetHeight+200){
+      item.style.opacity = (difference-150)/(item.offsetHeight+50)
+  }else if(difference>item.offsetHeight+200){
+      item.style.opacity = 1
+  }else{
+      item.style.opacity = 0
+  }
+}
+
+const details2TransitionEvent = (item)=>{
+
+  let difference = windowHeight - item.getBoundingClientRect().top
+  
+  if(difference > 150 && difference < item.offsetHeight+200){
+      item.style.opacity = (difference-150)/(item.offsetHeight+50)
+      item.style.transform = `translateY(${-100*(difference-150)/(item.offsetHeight+50)}px)`
+  }else if(difference>item.offsetHeight+200){
+      item.style.opacity = 1
+  }else{
+      item.style.opacity = 0
+  }
+}
+
+
+const ImgScrollHandler = ()=>{
+  details2Event(ContentImg)
+  details2Event(Text_2)
+  details2TransitionEvent(ContentItem)
+}
+
+window.addEventListener('scroll', ImgScrollHandler)
+
 });
