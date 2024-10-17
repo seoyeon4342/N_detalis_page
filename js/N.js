@@ -76,6 +76,9 @@ window.addEventListener('scroll', WidthControlHandler)
 const ContentImg = document.querySelector('.details2_content > img')
 const Text_2 = document.querySelector('.details2_textwrap h2')
 const ContentItem = document.querySelector('.details2_content_item')
+const Content2Img = document.querySelector('.details2_content2 > img')
+const Content2Item = document.querySelector('.details2_content2_item')
+const Text_3 = document.querySelector('.details2_textwrap2 h2')
 
 const details2Event = (item)=>{
 
@@ -106,9 +109,13 @@ const details2TransitionEvent = (item)=>{
 
 
 const ImgScrollHandler = ()=>{
-  details2Event(ContentImg)
+  
   details2Event(Text_2)
+  details2Event(Text_3)
+  details2Event(ContentImg)
+  details2Event(Content2Img)  
   details2TransitionEvent(ContentItem)
+  details2TransitionEvent(Content2Item)
 }
 
 window.addEventListener('scroll', ImgScrollHandler)
