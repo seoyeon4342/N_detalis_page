@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+ /*  N DNA (스크롤 >> 나타남) */
   const initalize = ()=>{
       windowHeight = window.outerHeight
       history.scrollRestoration = "manual";
@@ -41,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
 observer.observe(Text)
 
 /* details_ performance*/
-/* width 조절 */
+/* width 조절(스크롤) */
 const walls = document.querySelectorAll('.details2_wall')
 const WallPaper = document.querySelector('.details2_wallpaper')
 let difference
@@ -68,7 +69,7 @@ const WidthControlHandler = ()=>{
 window.addEventListener('scroll', WidthControlHandler)
 
 
-/* 기능 소개 */
+/* 기능 소개(스크롤 >> 보이기) */
 
 const ContentImg = document.querySelector('.details2_content > img')
 const ContentImg2 = document.querySelector('.details2_content2 > img')
