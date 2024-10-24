@@ -56,7 +56,7 @@ const WidthControlHandler = ()=>{
   else if(difference>150 && difference<700){
 
       walls.forEach(item=>
-          item.style.width = `${-(4/11)*difference + 255 }px`)
+          item.style.width = `${-(1/3)*difference + 255 }px`)
   }
   else if(difference>=700){
 
