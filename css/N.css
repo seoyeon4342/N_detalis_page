@@ -85,7 +85,7 @@ main {max-width: 2048px; margin: auto; font-family: 'Paperlogy-8ExtraBold';}
 .details_textwrap h1{
   font-size: 38px;
   line-height: 1.1;
-  color: #1677ff;
+  color: #3287fc;
   margin-bottom: 10px;
 }
 
@@ -100,7 +100,7 @@ main {max-width: 2048px; margin: auto; font-family: 'Paperlogy-8ExtraBold';}
   margin-bottom: 10px;
   font-size: 25px;
   line-height: 1.4;
-  color: #1677ff;
+  color: #3287fc;
 }
 
 .details_content h2{
@@ -120,7 +120,7 @@ main {max-width: 2048px; margin: auto; font-family: 'Paperlogy-8ExtraBold';}
 .details_content h3{
   font-size: 22px;
   line-height: 1.5;
-  color: #accfee;
+  color: #c4c4c4;
   padding: 10px;
 }
 
@@ -140,7 +140,7 @@ main {max-width: 2048px; margin: auto; font-family: 'Paperlogy-8ExtraBold';}
 }
 
 .details2_container_inner{
-  width: 92%;
+  width: 85%;
   height: 100%;
   max-width: 1920px;
   margin: 0 auto;
@@ -232,7 +232,7 @@ main {max-width: 2048px; margin: auto; font-family: 'Paperlogy-8ExtraBold';}
 .details2_container_inner span{
   font-size: 30px;
   padding-top: 10px;
-  color: #0c2840;
+  color: #c4c4c4;
 }
 
 /* 기능 소개 (액티브 사운드/이퀄라이저) */
